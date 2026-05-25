@@ -1,0 +1,11 @@
+name: Proof HTML
+on:
+  push:octocat :+1: This PR looks great - it's ready to merge! :shipit:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: anishathalye/proof-html@v1.1.0
+        with:
+          directory: ./
